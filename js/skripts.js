@@ -4,6 +4,7 @@ function nolasa(){
     const m2=mala2.value;
     const m3=mala3.value;
 
+    
     console.log(m1, m2, m3);
     if (m1>0 && m2>0 && m3>0){
         console.log({m1, m2, m3});
