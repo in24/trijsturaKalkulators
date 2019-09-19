@@ -1,3 +1,3 @@
-nolasa(){
+function nolasa(){
     
 }
