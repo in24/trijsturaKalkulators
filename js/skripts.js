@@ -1,4 +1,8 @@
-// funkcija nolasa formā ievadītās vērtības un ja ievadīto malu garumi ir lielāki par 0, tad funkcija atgriež vērtības `m1, m2, m3`, pretējā gadījumā atgriež `False`
+/* funkcija nolasa formā ievadītās vērtības un 
+ja ievadīto malu garumi ir lielāki par 0, 
+tad funkcija atgriež vērtības `m1, m2, m3`, 
+pretējā gadījumā atgriež `False`
+*/
 
 function nolasa(){
     const malas=document.getElementsByClassName('mala');    
