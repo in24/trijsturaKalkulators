@@ -3,7 +3,7 @@ function nolasa(){
     const malas=document.getElementsByClassName('mala');    
     const m1=mala1.value;
     const m2=mala2.value;
-    const m3=mala3.value;
+    var m3=mala3.value;
 
     
     console.log(m1, m2, m3);
