@@ -20,3 +20,8 @@ function nolasa(){
         return false;
     }    
 }
+function perimetrs(m1,m2,m3){
+    let p= m1+m2+m3;
+    console.log(p);
+    return p;
+}
