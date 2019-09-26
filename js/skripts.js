@@ -14,7 +14,7 @@ function nolasa(){
     console.log(m1, m2, m3);
     if (m1>0 && m2>0 && m3>0){
         console.log({m1, m2, m3});
-        return {m1, m2, m3};
+        return {parseFloat(m1), parseFloat(m2), parseFloat(m3)};
     } else {
         console.log(false);
         return false;
