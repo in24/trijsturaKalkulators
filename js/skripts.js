@@ -42,9 +42,6 @@ function laukums(){
     //return tlaukums;
     var result1 = document.getElementById("result1");
     result1.innerHTML = "Laukums ir " + tlaukums;
-    //console.log(tlaukums);
-    //return tlaukums;
-    var result1 = document.getElementById("result1");
-    result1.innerHTML = "Laukums ir " + tlaukums;
+    
 }
  
