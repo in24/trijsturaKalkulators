@@ -19,6 +19,7 @@ function nolasa(){
         return false;
     }    
 }
+// tā var, bet ņemšu to, kas lejā
 function perimetrs(m1,m2,m3){
     let p= m1+m2+m3;
     console.log(p);
