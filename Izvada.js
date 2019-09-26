@@ -1,3 +1,3 @@
-function izvadaaa {
+function izvada {
     let m3=
 }
