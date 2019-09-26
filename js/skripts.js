@@ -41,7 +41,7 @@ function laukums(){
     var m2 = document.getElementById("mala2").value;
     var m3 = document.getElementById("mala3").value;
     var pusper=(m1+m2+m3)/2;
-    var tlaukums=Math.sqrt(pusper*((pusper-m1)*(pusper-m2)*(pusper-m3)));
+    var tlaukums=Math.sqrt(pusper*(pusper-m1)*(pusper-m2)*(pusper-m3));
     //console.log(tlaukums);
     //return tlaukums;
     var result1 = document.getElementById("result1");
