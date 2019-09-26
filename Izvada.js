@@ -1,3 +1,3 @@
 function izvada {
-    let m5=
+    let m6=
 }
