@@ -47,4 +47,15 @@ function laukums(){
     var result1 = document.getElementById("result1");
     result1.innerHTML = "Laukums ir " + tlaukums;
 }
- 
+// Funkcija, kura sagatavo izvadāmo informāciju
+function rezultats() {
+    // izsauc funkciju nolasa() - pārbauda: ja false, atgriež rezultātu, ka nepareizi ievaddati, ja true, dara tālāk
+    // izsauc funkciju irTrijsturis() - pārbauda: ja false, atgriež rezultātu, ka trijstūris neeksistē, ja true, dara tālā
+    // izsauc abas aprēķinu funkcijas perimeter() un laukums() - atgriež rezultātu, kā teksta virkni ar abiem aprēķinātajiem lielumiem
+  }
+  
+  // Funkcija, kura izvada rezultāta sagatavoto informāciju
+  function izvadaTekstu() {
+    console.log (rezultats);// jāizsauc funkcija rezultats()
+    // elementā ar id "izvade" izvada tekstu
+  } 
