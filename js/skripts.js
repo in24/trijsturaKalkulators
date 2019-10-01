@@ -49,7 +49,27 @@ function laukums(){
 }
 // Funkcija, kura sagatavo izvadāmo informāciju
 function rezultats() {
-    // izsauc funkciju nolasa() - pārbauda: ja false, atgriež rezultātu, ka nepareizi ievaddati, ja true, dara tālāk
+    if (function nolasa()) {
+        console.log( );
+    }
+    else {
+        console.log("nepareizi ievaddati");
+
+    }
+
+    if (function irTrijsturis()) {
+        console.log( );
+    }
+    else {
+        console.log("trijstūris neeksistē");
+
+        if (function perimeter()&&laukums() ) {
+            console.log( );
+        }
+        else {
+            console.log(" ");
+        
+        // izsauc funkciju nolasa() - pārbauda: ja false, atgriež rezultātu, ka nepareizi ievaddati, ja true, dara tālāk
     // izsauc funkciju irTrijsturis() - pārbauda: ja false, atgriež rezultātu, ka trijstūris neeksistē, ja true, dara tālā
     // izsauc abas aprēķinu funkcijas perimeter() un laukums() - atgriež rezultātu, kā teksta virkni ar abiem aprēķinātajiem lielumiem
   }
