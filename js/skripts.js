@@ -46,10 +46,14 @@ function laukums() {
 }
 
 // Funkcija, kura pārbauda, vai eksistē trijstūris ar nolasītajām malām
-function irTrijsturis() {
-    // izsauc funkciju nolasa()
+function irTrijsturis(m1,m2,m3) {
     // pārbauda, vai izpildās trijstūra nevienādība
     // atgriež true vai false
+    if (m1<m2+m3 && m2<m1+m3 && m3<m1+m2) {
+       return true;
+    } else {
+       return false;
+    }
 }
 
 // Funkcija, kura sagatavo izvadāmo informāciju
