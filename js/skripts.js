@@ -49,7 +49,7 @@ function laukums(){
 }
 // Funkcija, kura sagatavo izvadāmo informāciju
 function rezultats() {
-    if (function nolasa()) {
+    if (nolasa()) {
         console.log( );
     }
     else {
@@ -57,13 +57,13 @@ function rezultats() {
 
     }
 
-    if (function irTrijsturis()) {
+    if (irTrijsturis()) {
         console.log( );
     }
     else {
         console.log("trijstūris neeksistē");
 
-        if (function perimeter()&&laukums() ) {
+        if (perimeter()&&laukums()) {
             console.log( );
         }
         else {
@@ -76,6 +76,8 @@ function rezultats() {
   
   // Funkcija, kura izvada rezultāta sagatavoto informāciju
   function izvadaTekstu() {
-    console.log (rezultats);// jāizsauc funkcija rezultats()
+    <p>P= <output id="p"></output></p>
+    <p>L= <output id="tlaukums"></output></p>
+    // jāizsauc funkcija rezultats()
     // elementā ar id "izvade" izvada tekstu
   } 
