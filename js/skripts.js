@@ -77,7 +77,7 @@ function rezultats() {
   // Funkcija, kura izvada rezultāta sagatavoto informāciju
   function izvadaTekstu() {
     <p>P= <output id="p"></output></p>
-    <p>L= <output id="tlaukums"></output></p>
+    <p>L= <output id="result1"></output></p>
     // jāizsauc funkcija rezultats()
     // elementā ar id "izvade" izvada tekstu
   } 
