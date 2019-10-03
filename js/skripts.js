@@ -53,7 +53,7 @@ function rezultats() {
         console.log( );
     }
     else {
-        console.log("nepareizi ievaddati");
+        alert("nepareizi ievaddati");
 
     }
 
@@ -75,9 +75,9 @@ function rezultats() {
   }
   
   // Funkcija, kura izvada rezultāta sagatavoto informāciju
-  function izvadaTekstu() {
-    <p>P= <output id="p"></output></p>
-    <p>L= <output id="result1"></output></p>
+  function izvadaTekstu() { 
+    document.getElementById("result").innerHTML = result;
+    document.getElementById('result1').innerHTML = result1;
+    document.getElementById('izvade').value;
     // jāizsauc funkcija rezultats()
     // elementā ar id "izvade" izvada tekstu
-  } 
