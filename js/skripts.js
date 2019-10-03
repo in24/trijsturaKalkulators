@@ -31,7 +31,7 @@ function perimeter(m1,m2,m3) {
 //šeit no pusperimetra var aprēķināt laukumu
 function laukums(m1,m2,m3) {
   const pusper=perimeter(m1,m2,m3)/2;
-  var tlaukums = Math.sqrt(
+  let tlaukums = Math.sqrt(
     pusper * ((pusper - m1) * (pusper - m2) * (pusper - m3))
   );
   console.log(tlaukums);
