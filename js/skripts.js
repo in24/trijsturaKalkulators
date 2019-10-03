@@ -20,17 +20,12 @@ function nolasa() {
   }
 }
 
-// tā var, bet ņemšu to, kas lejā
-function perimetrs(m1, m2, m3) {
-  let p = m1 + m2 + m3;
-  console.log(p);
-  return p;
-}
-
-//vēl viens variants perimetra aprēķināšanā
+//perimetra aprēķināšana
 function perimeter() {
   var malas = nolasa();
-  var perimeter = malas.m1 + malas.m2 + malas.m3;
+  var p = malas.m1 + malas.m2 + malas.m3;
+  console.log(perimeter);
+  return p;
   // Vajag atgriezt izrēķināto perimetru
 }
 
