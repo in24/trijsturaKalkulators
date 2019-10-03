@@ -24,7 +24,7 @@ function nolasa() {
 function perimeter() {
   var malas = nolasa();
   var p = malas.m1 + malas.m2 + malas.m3;
-  console.log(perimeter);
+  console.log(p);
   return p;
   // Vajag atgriezt izrēķināto perimetru
 }
@@ -53,6 +53,7 @@ function irTrijsturis(m1,m2,m3) {
 
 // Funkcija, kura sagatavo izvadāmo informāciju
 function rezultats() {
+
   // izsauc funkciju nolasa() - pārbauda: ja false, atgriež rezultātu, ka nepareizi ievaddati, ja true, dara tālāk
   // izsauc funkciju irTrijsturis() - pārbauda: ja false, atgriež rezultātu, ka trijstūris neeksistē, ja true, dara tālā
   // izsauc abas aprēķinu funkcijas perimeter() un laukums() - atgriež rezultātu, kā teksta virkni ar abiem aprēķinātajiem lielumiem
