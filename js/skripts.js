@@ -29,11 +29,10 @@ function perimeter(m1,m2,m3) {
 }
 
 //šeit no pusperimetra var aprēķināt laukumu
-function laukums() {
-  var malas = nolasa();
-  var pusper = (malas.m1 + malas.m2 + malas.m3) / 2;
-  var tlaukums = Math.sqrt(
-    pusper * ((pusper - malas.m1) * (pusper - malas.m2) * (pusper - malas.m3))
+function laukums(m1,m2,m3) {
+  const pusper=perimeter(m1,m2,m3)/2;
+  let tlaukums = Math.sqrt(
+    pusper * ((pusper - m1) * (pusper - m2) * (pusper - m3))
   );
   console.log(tlaukums);
   return tlaukums;
