@@ -20,10 +20,9 @@ function nolasa() {
   }
 }
 
-//perimetra aprēķināšana
-function perimeter() {
-  var malas = nolasa();
-  var p = malas.m1 + malas.m2 + malas.m3;
+//perimetra aprēķināšana 
+function perimeter(m1,m2,m3) {
+  const p = m1 + m2 + m3;
   console.log(p);
   return p;
   // Vajag atgriezt izrēķināto perimetru
