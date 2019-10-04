@@ -4,13 +4,12 @@ tad funkcija atgriež vērtības `m1, m2, m3`,
 pretējā gadījumā atgriež `False`
 */
 
-function nolasa() {
+function nolasa() {  
   const malas = document.getElementsByClassName("mala");
   const m1 = parseFloat(mala1.value);
   const m2 = parseFloat(mala2.value);
-  const m3 = parseFloat(mala3.value);
-
-  console.log(m1, m2, m3);
+  const m3 = parseFloat(mala3.value);  
+  
   if (m1 > 0 && m2 > 0 && m3 > 0) {
     console.log({ m1, m2, m3 });
     return { m1, m2, m3 };
@@ -21,7 +20,7 @@ function nolasa() {
 }
 
 //perimetra aprēķināšana 
-function perimeter(m1,m2,m3) {
+function perimeter(m1, m2, m3) {
   const p = m1 + m2 + m3;
   console.log(p);
   return p;
@@ -29,8 +28,8 @@ function perimeter(m1,m2,m3) {
 }
 
 //šeit no pusperimetra var aprēķināt laukumu
-function laukums(m1,m2,m3) {
-  const pusper=perimeter(m1,m2,m3)/2;
+function laukums(m1, m2, m3) {
+  const pusper = perimeter(m1, m2, m3) / 2;
   let tlaukums = Math.sqrt(
     pusper * ((pusper - m1) * (pusper - m2) * (pusper - m3))
   );
@@ -39,28 +38,53 @@ function laukums(m1,m2,m3) {
 }
 
 // Funkcija, kura pārbauda, vai eksistē trijstūris ar nolasītajām malām
-function irTrijsturis(m1,m2,m3) {
-    // pārbauda, vai izpildās trijstūra nevienādība
-    // atgriež true vai false
-    if (m1<m2+m3 && m2<m1+m3 && m3<m1+m2) {
-       return true;
-    } else {
-       return false;
-    }
+function irTrijsturis(m1, m2, m3) {
+  // pārbauda, vai izpildās trijstūra nevienādība
+  // atgriež true vai false
+  if (m1 < m2 + m3 && m2 < m1 + m3 && m3 < m1 + m2) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // Funkcija, kura sagatavo izvadāmo informāciju
+// izsauc funkciju nolasa() - pārbauda: ja false, atgriež rezultātu, ka nepareizi ievaddati, ja true, dara tālāk
+// izsauc funkciju irTrijsturis() - pārbauda: ja false, atgriež rezultātu, ka trijstūris neeksistē, ja true, dara tālā
+// izsauc abas aprēķinu funkcijas perimeter() un laukums() - atgriež rezultātu, kā teksta virkni ar abiem aprēķinātajiem lielumiem
+
 function rezultats() {
-
+  const m=nolasa();
+  m1=m.m1;  m2=m.m2; m3=m.m3;
+  console.log(m1, m2, m3);     
+  if (!nolasa()) {
+    t="Nekorekti ievaddati, trijstūra malu vērtībām ir jābūt lielākām par 0";
+    
+  } else {    
+    if (irTrijsturis(m1,m2,m3)==false){
+      t="Trijstūris neeksistē, jo jebkuru 2 malu garumu summai ir jābūt lielākai par trešo malu!";    
+    } else {      
+      t = "Trijstūris ar šādiem malu garumiem eksistē. "
+      if (m1==m2 && m2==m3){
+        t+="Tas ir vienādmalu trijstūris. "
+      } else {
+      if (m1==m2 || m2==m3 || m1==m3){
+        t+="Tas ir vienādsānu trijstūris. "
+      }
+      }
+      const p = perimeter(m1, m2, m3);
+      const s = laukums(m1, m2, m3);      
+      t += "<br>Perimetrs ir " + p + " un laukums ir " + s + ".";
+    } 
+    }
+    console.log(t);  
+    return t;
 }
-  // izsauc funkciju nolasa() - pārbauda: ja false, atgriež rezultātu, ka nepareizi ievaddati, ja true, dara tālāk
-  // izsauc funkciju irTrijsturis() - pārbauda: ja false, atgriež rezultātu, ka trijstūris neeksistē, ja true, dara tālā
-  // izsauc abas aprēķinu funkcijas perimeter() un laukums() - atgriež rezultātu, kā teksta virkni ar abiem aprēķinātajiem lielumiem
-
 
 // Funkcija, kura izvada rezultāta sagatavoto informāciju
-function izvadaTekstu() {
-  // jāizsauc funkcija rezultats()
-  // elementā ar id "izvade" izvada tekstu
+ // jāizsauc funkcija rezultats() // rezultats();
+ // elementā ar id "izvade" izvada tekstu // document.getElementById("izvade").innerHTML=t; 
+function izvadaTekstu() {   
+    
+  }
   
-}
