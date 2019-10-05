@@ -20,8 +20,8 @@ function nolasa() {
   }
 }
 
-//perimetra aprēķināšana 
-function perimeter(m1,m2,m3) {
+//perimetra aprēķināšana
+function perimeter(m1, m2, m3) {
   const p = m1 + m2 + m3;
   console.log(p);
   return p;
@@ -29,8 +29,8 @@ function perimeter(m1,m2,m3) {
 }
 
 //šeit no pusperimetra var aprēķināt laukumu
-function laukums(m1,m2,m3) {
-  const pusper=perimeter(m1,m2,m3)/2;
+function laukums(m1, m2, m3) {
+  const pusper = perimeter(m1, m2, m3) / 2;
   let tlaukums = Math.sqrt(
     pusper * ((pusper - m1) * (pusper - m2) * (pusper - m3))
   );
@@ -39,28 +39,32 @@ function laukums(m1,m2,m3) {
 }
 
 // Funkcija, kura pārbauda, vai eksistē trijstūris ar nolasītajām malām
-function irTrijsturis(m1,m2,m3) {
-    // pārbauda, vai izpildās trijstūra nevienādība
-    // atgriež true vai false
-    if (m1<m2+m3 && m2<m1+m3 && m3<m1+m2) {
-       return true;
-    } else {
-       return false;
-    }
+function irTrijsturis(m1, m2, m3) {
+  // pārbauda, vai izpildās trijstūra nevienādība
+  // atgriež true vai false
+  if (m1 < m2 + m3 && m2 < m1 + m3 && m3 < m1 + m2) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // Funkcija, kura sagatavo izvadāmo informāciju
 function rezultats() {
-
-}
   // izsauc funkciju nolasa() - pārbauda: ja false, atgriež rezultātu, ka nepareizi ievaddati, ja true, dara tālāk
   // izsauc funkciju irTrijsturis() - pārbauda: ja false, atgriež rezultātu, ka trijstūris neeksistē, ja true, dara tālā
   // izsauc abas aprēķinu funkcijas perimeter() un laukums() - atgriež rezultātu, kā teksta virkni ar abiem aprēķinātajiem lielumiem
-
+  return "Vēl tikai Brīvā Suņa aste jāpārkāpj šeit!";
+}
 
 // Funkcija, kura izvada rezultāta sagatavoto informāciju
 function izvadaTekstu() {
   // jāizsauc funkcija rezultats()
+  const teksts = rezultats();
   // elementā ar id "izvade" izvada tekstu
-  
+  console.log(teksts);
+  const sakne = document.getElementById("izvade");
+  const raksti = document.createElement("h3");
+  raksti.innerHTML = JSON.stringify(teksts);
+  sakne.appendChild(raksti);
 }
