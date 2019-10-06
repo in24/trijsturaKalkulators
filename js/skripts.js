@@ -92,7 +92,7 @@ function izvadaTekstu() {
   console.log(teksts);
   const sakne = document.getElementById("izvade");
   const raksti = document.createElement("h3");
-  raksti.innerHTML = JSON.stringify(teksts);
+  raksti.innerHTML = teksts;
   sakne.appendChild(raksti);
 }
 
