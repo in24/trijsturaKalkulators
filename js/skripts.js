@@ -19,7 +19,7 @@ function nolasa() {
   }
 }
 
-//perimetra aprēķināšana 
+//perimetra aprēķināšana
 function perimeter(m1, m2, m3) {
   const p = m1 + m2 + m3;
   console.log(p);
@@ -83,8 +83,16 @@ function rezultats() {
 
 // Funkcija, kura izvada rezultāta sagatavoto informāciju
  // jāizsauc funkcija rezultats() // rezultats();
- // elementā ar id "izvade" izvada tekstu // document.getElementById("izvade").innerHTML=t; 
-function izvadaTekstu() {   
-    
-  }
-  
+ // elementā ar id "izvade" izvada tekstu // document.getElementById("izvade").innerHTML=t;
+
+function izvadaTekstu() {
+  // jāizsauc funkcija rezultats()
+  const teksts = rezultats();
+  // elementā ar id "izvade" izvada tekstu
+  console.log(teksts);
+  const sakne = document.getElementById("izvade");
+  const raksti = document.createElement("h3");
+  raksti.innerHTML = JSON.stringify(teksts);
+  sakne.appendChild(raksti);
+}
+
