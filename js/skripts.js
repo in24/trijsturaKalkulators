@@ -73,7 +73,7 @@ function rezultats() {
       }
       }
       const p = perimeter(m1, m2, m3);
-      const s = Math.round( laukums(m1, m2, m3) * 100) / 100;      
+      const s = laukums(m1, m2, m3);      
       t += "<br>Perimetrs ir " + p + " un laukums ir " + s + ".";
     } 
     }
