@@ -64,7 +64,7 @@ function rezultats() {
     if (irTrijsturis(m1,m2,m3)==false){
       t="Trijstūris neeksistē, jo jebkuru 2 malu garumu summai ir jābūt lielākai par trešo malu!";    
     } else {      
-      t = "Trijstūris ar šādiem malu garumiem eksistē. "
+      t = "Trijstūris ar malu garumiem " + m1 +", " + m2 + " un " + m3 + " eksistē. "
       if (m1==m2 && m2==m3){
         t+="Tas ir vienādmalu trijstūris. "
       } else {
