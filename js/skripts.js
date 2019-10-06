@@ -76,8 +76,12 @@ function rezultats() {
   
   // Funkcija, kura izvada rezultāta sagatavoto informāciju
   function izvadaTekstu() { 
-    document.getElementById("result").innerHTML = result;
-    document.getElementById('result1').innerHTML = result1;
-    document.getElementById('izvade').value;
     // jāizsauc funkcija rezultats()
-    // elementā ar id "izvade" izvada tekstu
+  const teksts = rezultats();
+  // elementā ar id "izvade" izvada tekstu
+  console.log(teksts);
+  const sakne = document.getElementById("izvade");
+  const raksti = document.createElement("h3");
+  raksti.innerHTML = JSON.stringify(teksts);
+  sakne.appendChild(raksti);
+}
