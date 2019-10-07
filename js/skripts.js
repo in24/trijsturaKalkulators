@@ -91,7 +91,7 @@ function izvadaTekstu() {
   // elementā ar id "izvade" izvada tekstu
   console.log(teksts);
   const sakne = document.getElementById("izvade");
-  const raksti = document.createElement("h3");
+  const raksti = document.createElement("p");
   raksti.innerHTML = teksts;
   sakne.appendChild(raksti);
 }
